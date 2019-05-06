@@ -1,0 +1,101 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation: animacija 6s linear infinite;
+/*
+    animation-name: animacija;
+    animation-duration: 3s;
+*/
+/*    animation-delay: 2s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: linear;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.box2 {
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    animation: animacija 6s linear infinite;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+/*
+    animation-name: animacija;
+    animation-duration: 3s;
+*/
+/*    animation-delay: 2s;*/
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: linear;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.box3 {
+    width: 50px;
+    height: 50px;
+    background-color: rosybrown;
+    animation: animacija 6s linear infinite;
+/*
+    animation-name: animacija;
+    animation-duration: 3s;
+*/
+    animation-delay: 2s;
+/*    animation-iteration-count: infinite;*/
+/*    animation-timing-function: linear;*/
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@keyframes animacija {
+    0% {
+        background-color: blue;
+        border-radius: 50%;
+        left: 0px;
+        top: 0px;
+        opacity: 0;
+    }
+
+    34% {
+        background-color: red;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        left: 800px;
+        top: 0px;
+        opacity: 1;
+        /*transform: rotate(360deg);*/
+    }
+    
+    50% {
+        background-color: yellow;
+        left: 800px;
+        top: 400px;
+        opacity: 1;
+        border-radius: 0%;
+    }
+    
+    84% {
+        background-color: green;
+        top: 400px;
+        left: 0px;
+        border-radius: 0px;
+        transform: rotate(360deg)
+    }
+    
+    100% {
+        background-color: blue;
+        left: 0px;
+        top: 0px;
+        border-radius: 50px;
+    }
+}
